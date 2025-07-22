@@ -1,0 +1,100 @@
+/* App.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+body {
+  background: #000;
+}
+
+.quiz-container {
+  height: 100vh;
+  width: 100vw;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.dark {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+}
+
+.light {
+  background: linear-gradient(to right, #f0f0f0, #d9e2ec, #ffffff);
+  color: #222;
+}
+
+.quiz-container h1 {
+  margin-bottom: 10px;
+  font-size: 2.4rem;
+  color: #00ffc8;
+  text-align: center;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.btn {
+  padding: 14px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #00bcd4;
+  color: #fff;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #0097a7;
+  transform: scale(1.05);
+}
+
+.loading {
+  font-size: 1.5rem;
+  color: #ffc107;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.error {
+  color: #f44336;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 8px 16px;
+  background: #666;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  background: #888;
+}
