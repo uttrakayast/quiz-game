@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import Confetti from "react-confetti";
 import "./App.css";
 
+
 const App = () => {
   const [questions, setQuestions] = useState([]);
   const [index, setIndex] = useState(0);
@@ -80,9 +81,9 @@ const App = () => {
       <button className="theme-toggle" onClick={toggleTheme}>
         {darkMode ? "🌞 Light Mode" : "🌙 Dark Mode"}
       </button>
+      <audio ref={correctSoundRef} src="./sounds/correct.mp3" preload="auto" />
+      <audio ref={wrongSoundRef} src="./sounds/wrong.mp3" preload="auto" />
 
-      <audio ref={correctSoundRef} src="/sounds/correct.mp3" preload="auto" />
-      <audio ref={wrongSoundRef} src="/sounds/wrong.mp3" preload="auto" />
 
       {loading && <h2 className="loading">⏳ Loading...</h2>}
 
