@@ -54,20 +54,29 @@ body {
 }
 
 .btn {
-  padding: 14px 20px;
-  font-size: 1rem;
+  padding: 10px 20px;
+  margin: 8px 0;
   border: none;
-  border-radius: 10px;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
   cursor: pointer;
-  background-color: #00bcd4;
-  color: #fff;
-  transition: all 0.2s ease;
+  transition: background 0.3s;
 }
 
 .btn:hover {
-  background-color: #0097a7;
-  transform: scale(1.05);
+  background-color: #0056b3;
 }
+
+.btn:focus,
+.btn:active,
+.btn:focus-visible {
+  outline: none;
+  box-shadow: none;
+  background-color: #007bff; /* Same as original */
+}
+
 
 .loading {
   font-size: 1.5rem;
